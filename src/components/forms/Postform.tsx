@@ -44,9 +44,9 @@ const Postform = ({ post, action }: PostFormProps) => {
           tags: post ? post.tags.join(",") : "",
         },
       });      
-      const { mutateAsync: createPost, isPending: isLoadingCreate } =
+      const { mutateAsync: createPost } =
       useCreatePost();
-    const { mutateAsync: updatePost, isPending: isLoadingUpdate } =
+    const { mutateAsync: updatePost} =
       useUpdatePost();
  
   // 2. Define a submit handler.
